@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+  overflow-x: hidden;
+}
+
+span {
+  color: #ffbf00;
+}
+
+strong {
+  color: #003153;
+}
+
+/* MOBILE-FIRST */
+
+/* Extra small devices (less than 375px) */
+/* No media query since this is the default */
+
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.188em;
+  color: #003153;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.188em;
+  line-height: 1.35em;
+  color: #003153;
+}
+
+h5 {
+  margin: 0 0.5rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 4rem 0;
+}
+
+.container h1 {
+  font-size: 1.3rem;
+  letter-spacing: 0.188em;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.pb-4 {
+  padding: 0 0 4rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.line {
+  border-top: 1px solid #777;
+  margin-top: 0.42rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  margin: 0.4rem 0 0.7rem;
+  box-shadow: 1px 1px 3px #555;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.code-btn {
+  background-color: #003153;
+  color: #fff;
+}
+
+.live-btn {
+  background-color: #ffbf00;
+  color: #000;
+  font-weight: bold;
+  margin-left: 0.6rem;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list a {
+  text-decoration: none;
+}
+
+/* Background */
+.particles {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.overlay {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
+  background-color: #efefef;
+  box-shadow: 0 1px 3px #ccc;
+}
+
+nav ul,
+.icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 0.6rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.063em;
+}
+
+nav a {
+  color: #000;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ffbf00;
+}
+
+.about-me {
+  margin-top: 3rem;
+  padding: 0.7rem;
+  text-align: justify;
+  border: 2px solid #003153;
+}
+
+.proj-title {
+  font-size: 1.05rem;
+  margin: 1.75rem 0 0.5rem;
+  font-weight: bold;
+  color: #003153;
+}
+
+/* Brand icons */
+.dev-icon {
+  font-size: 4rem;
+  color: #003153;
+  margin: 0.6rem 1.2rem;
+}
+
+#contact {
+  background-color: #efefef;
+  padding: 2rem 0;
+}
+
+.icon {
+  margin-top: 1.8rem;
+}
+
+.icon a {
+  margin: 0 1.2rem;
+}
+
+.contact-icon {
+  font-size: 3.4rem;
+  color: #003153;
+}
+
+footer {
+  background-color: #efefef;
+  border-top: 1px solid #aaa;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer p {
+  font-weight: bold;
+  font-size: 0.825rem;
+  margin: 0 0.6rem;
+}
+
+/* Increase the size on hover */
+.btn:hover,
+.dev-icon:hover,
+.contact-icon:hover {
+  transform: scale(1.08);
+}
+
+/* Modal Background */
+#about {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-animation: fadeIn 0.7s;
+  animation: fadeIn 0.7s;
+}
+
+/* Modal Content */
+.about-site {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  -webkit-animation: slideIn 0.7s;
+  animation: slideIn 0.7s;
+}
+
+/* Modal Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 2.25rem;
+}
+
+.modal-header {
+  background-color: #ffbf00;
+  padding: 1rem;
+}
+
+.modal-header h1 {
+  text-align: center;
+  font-size: 1.05rem;
+  letter-spacing: 0.125em;
+  color: #000;
+}
+
+.modal-body {
+  background-color: #efefef;
+  padding: 1.25rem;
+}
+
+/* Bottom Modal Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* LARGER PHONES (iPhone X) */
+
+@media only screen and (min-width: 375px) {
+  nav ul li {
+    font-size: 0.9rem;
+  }
+}
+
+/* TABLET SCREENS AND ABOVE */
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 1.57rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    margin-right: 1.7rem;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .container {
+    max-width: 1440px;
+    padding: 5rem 0;
+  }
+
+  .container h1 {
+    font-size: 1.55rem;
+  }
+
+  .pb-4 {
+    padding: 0 0 4.9rem;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .line {
+    border-width: 2px;
+    margin-top: 0.6rem;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    align-items: center;
+  }
+
+  .about-me {
+    width: 550px;
+    margin: 3rem auto 0;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .proj-title {
+    margin-top: 2rem;
+  }
+
+  .icon a {
+    margin: 0 2rem;
+  }
+
+  .dev-icon {
+    font-size: 5rem;
+    margin: 0.25rem 1.8rem;
+  }
+
+  .contact-icon {
+    font-size: 4rem;
+  }
+
+  #contact {
+    padding: 2.3rem 0;
+  }
+
+  #about {
+    padding-top: 200px;
+    overflow-y: auto;
+  }
+
+  .about-site {
+    position: relative;
+    width: 480px;
+    margin: auto;
+    bottom: auto;
+    -webkit-animation: slideIn 1s;
+    animation: slideIn 1s;
+  }
+
+  .modal-body {
+    padding: 2rem;
+  }
+
+  /* Top Modal Animation */
+  @-webkit-keyframes slideIn {
+    from {
+      top: -300px;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      top: -300px;
+    }
+    to {
+      top: 0;
+    }
+  }
+}
