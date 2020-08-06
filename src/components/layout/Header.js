@@ -24,9 +24,8 @@ const About = () => {
         data-aos-once="true"
       >
         <p className="about-me">
-          I am currently pursuing my Master of Computer Applications at Manipal
-          Institute of Technology, Manipal. I am a fast learner and have a keen
-          interest in web development.
+          A web development enthusiast, currently pursuing my Master's in
+          Computer Applications at Manipal Institute of Technology, Manipal.
         </p>
       </div>
     </div>

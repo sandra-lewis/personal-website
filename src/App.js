@@ -16,30 +16,34 @@ const App = () => {
     AOS.init();
   }, []);
 
+  const onClick = () => {
+    const links = document.getElementById('nav-links');
+    links.className === 'nav-bar'
+      ? links.classList.add('responsive')
+      : (links.className = 'nav-bar');
+  };
+
   return (
     <Fragment>
       <Particles className="particles" params={particlesOptions} />
-      <nav>
-        <ul className="list">
-          <li>
-            <AnchorLink offset="initial" href="#aboutme">
-              ABOUT
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink offset="50" href="#projects">
-              PROJECTS
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink offset="100" href="#skills">
-              SKILLS
-            </AnchorLink>
-          </li>
-          <li>
-            <AnchorLink href="#contact">CONTACT</AnchorLink>
-          </li>
-        </ul>
+      <nav className="nav-bar" id="nav-links">
+        <AnchorLink offset="initial" href="#aboutme">
+          ABOUT
+        </AnchorLink>
+
+        <AnchorLink offset="50" href="#projects">
+          PROJECTS
+        </AnchorLink>
+
+        <AnchorLink offset="100" href="#skills">
+          SKILLS
+        </AnchorLink>
+
+        <AnchorLink href="#contact">CONTACT</AnchorLink>
+
+        <div className="bar-icon" onClick={onClick}>
+          <i className="fas fa-bars" />
+        </div>
       </nav>
 
       <section id="aboutme" className="overlay">

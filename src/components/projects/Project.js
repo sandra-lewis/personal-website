@@ -24,7 +24,8 @@ const Project = ({
             rel="noopener noreferrer"
             className="btn code-btn"
           >
-            VIEW CODE
+            <i className="fab fa-github" />
+            &nbsp;&nbsp;VIEW CODE
           </a>
 
           {id === 1 || id === 2 ? (
@@ -34,7 +35,8 @@ const Project = ({
               rel="noopener noreferrer"
               className="btn live-btn"
             >
-              VIEW LIVE
+              <i className="fas fa-link" />
+              &nbsp;&nbsp;VISIT SITE
             </a>
           ) : (
             ''

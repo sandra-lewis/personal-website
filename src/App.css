@@ -46,6 +46,16 @@ h5 {
   margin: 0 0.5rem;
 }
 
+a {
+  /* -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
+  -webkit-tap-highlight-color: transparent;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -84,7 +94,7 @@ h5 {
 
 .btn {
   display: inline-block;
-  padding: 0.3rem 0.7rem;
+  padding: 0.35rem 0.8rem;
   margin: 0.4rem 0 0.7rem;
   box-shadow: 1px 1px 3px #555;
   border-radius: 20px;
@@ -94,12 +104,12 @@ h5 {
 
 .code-btn {
   background-color: #003153;
-  color: #fff;
+  color: #ffbf00;
 }
 
 .live-btn {
   background-color: #ffbf00;
-  color: #000;
+  color: #003153;
   font-weight: bold;
   margin-left: 0.6rem;
 }
@@ -130,44 +140,66 @@ h5 {
 }
 
 /* Navbar */
-nav {
+.nav-bar {
   position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
   overflow: hidden;
   padding: 1rem 0;
+  color: #003153;
   background-color: #efefef;
   box-shadow: 0 1px 3px #ccc;
 }
 
-nav ul,
-.icon {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-nav ul li {
-  padding: 0 0.6rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.063em;
-}
-
-nav a {
-  color: #000;
+.nav-bar a {
+  float: left;
+  display: block;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.188em;
+  color: #003153;
   font-weight: 600;
+  text-decoration: none;
 }
 
-nav a:hover {
+.nav-bar a:not(:first-child) {
+  display: none;
+}
+
+.nav-bar a:hover {
   color: #ffbf00;
+}
+
+.nav-bar.responsive .bar-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1rem;
+}
+
+.nav-bar.responsive a {
+  float: none;
+  display: block;
+  width: fit-content;
+}
+
+.nav-bar.responsive a:not(:first-child) {
+  padding: 0.6rem 1rem 0;
+}
+
+.bar-icon {
+  float: right;
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
 .about-me {
   margin-top: 3rem;
   padding: 0.7rem;
-  text-align: justify;
+  font-style: italic;
   border: 2px solid #003153;
 }
 
@@ -178,11 +210,17 @@ nav a:hover {
   color: #003153;
 }
 
-/* Brand icons */
+.icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .dev-icon {
-  font-size: 4rem;
+  font-size: 3.8rem;
   color: #003153;
-  margin: 0.6rem 1.2rem;
+  margin: 0.6rem 0.8rem;
 }
 
 #contact {
@@ -316,8 +354,20 @@ footer p {
 /* LARGER PHONES (iPhone X) */
 
 @media only screen and (min-width: 375px) {
-  nav ul li {
-    font-size: 0.9rem;
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-bar a,
+  .nav-bar a:not(:first-child) {
+    display: flex;
+    padding: 0 0.5rem;
+  }
+
+  .bar-icon {
+    display: none;
   }
 }
 
@@ -333,12 +383,9 @@ footer p {
     text-align: center;
   }
 
-  nav ul {
+  .nav-bar {
     justify-content: flex-end;
-  }
-
-  nav ul li {
-    margin-right: 1.7rem;
+    padding-right: 1rem;
   }
 
   .cursor-pointer {
@@ -354,12 +401,12 @@ footer p {
     font-size: 1.55rem;
   }
 
-  .pb-4 {
-    padding: 0 0 4.9rem;
-  }
-
   .center {
     text-align: center;
+  }
+
+  .pb-4 {
+    padding: 0 0 4.9rem;
   }
 
   .line {
