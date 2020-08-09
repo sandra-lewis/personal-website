@@ -18,7 +18,7 @@ const About = () => {
         </h2>
       </div>
       <div
-        data-aos="fade-up"
+        data-aos="fade"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="true"

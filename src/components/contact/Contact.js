@@ -1,22 +1,17 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { contactDetails } from '../../data/datasets';
 import ContactItem from './ContactItem';
 
 const Contact = () => {
   return (
-    <div
-      data-aos="zoom-in"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      data-aos-once="true"
-    >
+    <Fragment>
       <h1 className="text-center">CONTACT</h1>
       <div className="icon">
         {contactDetails.map((contact) => (
           <ContactItem key={contact.id} contact={contact} />
         ))}
       </div>
-    </div>
+    </Fragment>
   );
 };
 
