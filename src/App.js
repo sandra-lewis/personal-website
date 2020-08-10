@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from 'react';
-import Header from './components/layout/Header';
+import About from './components/layout/About';
 import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
@@ -47,7 +47,7 @@ const App = () => {
       </nav>
 
       <section id="aboutme" className="overlay">
-        <Header />
+        <About />
       </section>
       <section id="projects" className="white-bg">
         <Projects />

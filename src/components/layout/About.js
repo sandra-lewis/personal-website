@@ -9,13 +9,9 @@ const About = () => {
         data-aos-easing="ease-in-out"
         data-aos-once="true"
       >
-        <h1 className="center">
-          HI, <span>I'M</span>
-        </h1>
+        <h1 className="center">HI, I'M</h1>
         <br />
-        <h2>
-          SANDRA <span>REBECCA</span> LEWIS
-        </h2>
+        <h2>SANDRA REBECCA LEWIS</h2>
       </div>
       <div
         data-aos="fade"

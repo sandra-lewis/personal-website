@@ -11,9 +11,7 @@ const Skills = () => {
       data-aos-once="true"
       className="container pb-4"
     >
-      <h1>
-        SKI<span>LLS</span>
-      </h1>
+      <h1>SKILLS</h1>
       <div className="line"></div>
       <div className="icon">
         {skillSet.map((skill) => (

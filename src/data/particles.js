@@ -2,26 +2,28 @@
 export const particlesOptions = {
   particles: {
     number: {
-      value: 20,
-      density: {
-        enable: false,
-      },
+      value: 15,
     },
     color: {
-      value: ['#003153', '#ffbf00'],
+      value: ['#006666', '#686868'],
     },
     size: {
-      value: 20,
-      random: true,
+      value: 8,
     },
     line_linked: {
-      enable: false,
+      color: '#686868',
     },
     move: {
-      random: true,
-      speed: 1,
-      direction: 'top',
-      out_mode: 'out',
+      speed: 3.25,
+    },
+  },
+  interactivity: {
+    detect_on: 'window',
+    events: {
+      onhover: {
+        enable: true,
+        mode: 'repulse',
+      },
     },
   },
 };

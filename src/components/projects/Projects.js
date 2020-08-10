@@ -11,9 +11,7 @@ const Projects = () => {
         data-aos-easing="ease-in-out"
         data-aos-once="true"
       >
-        <h1>
-          PROJ<span>ECTS</span>
-        </h1>
+        <h1>PROJECTS</h1>
         <div className="line"></div>
       </div>
       <div className="grid-2">

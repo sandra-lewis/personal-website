@@ -16,12 +16,8 @@ body {
   overflow-x: hidden;
 }
 
-span {
-  color: #ffbf00;
-}
-
 strong {
-  color: #003153;
+  color: #006666;
 }
 
 /* MOBILE-FIRST */
@@ -32,14 +28,14 @@ strong {
 h1 {
   font-size: 1.5rem;
   letter-spacing: 0.188em;
-  color: #003153;
+  color: #686868;
 }
 
 h2 {
-  font-size: 2rem;
-  letter-spacing: 0.188em;
+  font-size: 2.2rem;
+  letter-spacing: 0.145em;
   line-height: 1.35em;
-  color: #003153;
+  color: #006666;
 }
 
 h5 {
@@ -82,28 +78,29 @@ a {
 }
 
 .line {
-  border-top: 1px solid #777;
+  border-top: 1px solid #808080;
   margin-top: 0.42rem;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.35rem 0.8rem;
+  padding: 0.4rem 0.9rem;
   margin: 0.4rem 0 0.7rem;
-  box-shadow: 1px 1px 3px #555;
   border-radius: 20px;
   font-size: 0.75rem;
   cursor: pointer;
 }
 
 .code-btn {
-  background-color: #003153;
-  color: #ffbf00;
+  background-color: #006666;
+  color: #fff;
+  box-shadow: 1px 1px 3px #808080;
 }
 
 .live-btn {
-  background-color: #ffbf00;
-  color: #003153;
+  background-color: #e0e0e0;
+  box-shadow: 1px 1px 3px #a9a9a9;
+  color: #006666;
   font-weight: bold;
   margin-left: 0.6rem;
 }
@@ -141,7 +138,6 @@ a {
   width: 100%;
   overflow: hidden;
   padding: 1rem 0;
-  color: #003153;
   background-color: #efefef;
   box-shadow: 0 1px 3px #ccc;
 }
@@ -152,7 +148,7 @@ a {
   padding-left: 1rem;
   font-size: 0.9rem;
   letter-spacing: 0.063em;
-  color: #003153;
+  color: #006666;
   font-weight: 600;
   text-decoration: none;
 }
@@ -162,7 +158,7 @@ a {
 }
 
 .nav-bar a:hover {
-  color: #ffbf00;
+  color: #686868;
 }
 
 .nav-bar.responsive .bar-icon {
@@ -194,14 +190,14 @@ a {
   margin-top: 3rem;
   padding: 0.7rem;
   font-style: italic;
-  border: 2px solid #003153;
+  border: 2px solid #006666;
 }
 
 .proj-title {
   font-size: 1.05rem;
   margin: 1.75rem 0 0.5rem;
   font-weight: bold;
-  color: #003153;
+  color: #006666;
 }
 
 .icon {
@@ -213,7 +209,7 @@ a {
 
 .dev-icon {
   font-size: 3.8rem;
-  color: #003153;
+  color: #006666;
   margin: 0.6rem 0.8rem;
 }
 
@@ -232,12 +228,12 @@ a {
 
 .contact-icon {
   font-size: 3.4rem;
-  color: #003153;
+  color: #006666;
 }
 
 footer {
   background-color: #efefef;
-  border-top: 1px solid #aaa;
+  border-top: 1px solid #a0a0a0;
   padding: 1rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -282,13 +278,13 @@ footer p {
 
 /* Modal Close Button */
 .close {
-  color: #000;
+  color: #f0f0f0;
   float: right;
   font-size: 2.25rem;
 }
 
 .modal-header {
-  background-color: #ffbf00;
+  background-color: #006666;
   padding: 1rem;
 }
 
@@ -296,11 +292,11 @@ footer p {
   text-align: center;
   font-size: 1.05rem;
   letter-spacing: 0.125em;
-  color: #000;
+  color: #f0f0f0;
 }
 
 .modal-body {
-  background-color: #efefef;
+  background-color: #f0f0f0;
   padding: 1.25rem;
 }
 
@@ -373,7 +369,7 @@ footer p {
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -404,7 +400,6 @@ footer p {
   }
 
   .line {
-    border-width: 2px;
     margin-top: 0.6rem;
   }
 
