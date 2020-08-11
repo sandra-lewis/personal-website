@@ -8,7 +8,7 @@ export const particlesOptions = {
       value: ['#015069', '#606060'],
     },
     size: {
-      value: 8,
+      value: 12,
     },
     line_linked: {
       color: '#909090',
