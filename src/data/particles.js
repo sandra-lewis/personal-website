@@ -5,13 +5,13 @@ export const particlesOptions = {
       value: 15,
     },
     color: {
-      value: ['#006666', '#686868'],
+      value: ['#015069', '#606060'],
     },
     size: {
       value: 8,
     },
     line_linked: {
-      color: '#686868',
+      color: '#909090',
     },
     move: {
       speed: 3.25,

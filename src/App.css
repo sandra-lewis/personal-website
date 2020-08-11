@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 /* GLOBAL STYLES */
 
@@ -17,7 +17,7 @@ body {
 }
 
 strong {
-  color: #006666;
+  color: #015069;
 }
 
 /* MOBILE-FIRST */
@@ -27,15 +27,16 @@ strong {
 
 h1 {
   font-size: 1.5rem;
-  letter-spacing: 0.188em;
-  color: #686868;
+  letter-spacing: 0.125em;
+  color: #606060;
 }
 
 h2 {
   font-size: 2.2rem;
-  letter-spacing: 0.145em;
+  letter-spacing: 0.063em;
   line-height: 1.35em;
-  color: #006666;
+  color: #015069;
+  font-weight: 600;
 }
 
 h5 {
@@ -54,7 +55,6 @@ a {
 
 .container h1 {
   font-size: 1.3rem;
-  letter-spacing: 0.188em;
 }
 
 .my-1 {
@@ -92,7 +92,7 @@ a {
 }
 
 .code-btn {
-  background-color: #006666;
+  background-color: #015069;
   color: #fff;
   box-shadow: 1px 1px 3px #808080;
 }
@@ -100,8 +100,8 @@ a {
 .live-btn {
   background-color: #e0e0e0;
   box-shadow: 1px 1px 3px #a9a9a9;
-  color: #006666;
-  font-weight: bold;
+  color: #015069;
+  font-weight: 600;
   margin-left: 0.6rem;
 }
 
@@ -148,7 +148,7 @@ a {
   padding-left: 1rem;
   font-size: 0.9rem;
   letter-spacing: 0.063em;
-  color: #006666;
+  color: #015069;
   font-weight: 600;
   text-decoration: none;
 }
@@ -158,7 +158,7 @@ a {
 }
 
 .nav-bar a:hover {
-  color: #686868;
+  color: #606060;
 }
 
 .nav-bar.responsive .bar-icon {
@@ -190,14 +190,14 @@ a {
   margin-top: 3rem;
   padding: 0.7rem;
   font-style: italic;
-  border: 2px solid #006666;
+  border: 2px solid #015069;
 }
 
 .proj-title {
   font-size: 1.05rem;
   margin: 1.75rem 0 0.5rem;
-  font-weight: bold;
-  color: #006666;
+  font-weight: 600;
+  color: #015069;
 }
 
 .icon {
@@ -209,7 +209,7 @@ a {
 
 .dev-icon {
   font-size: 3.8rem;
-  color: #006666;
+  color: #015069;
   margin: 0.6rem 0.8rem;
 }
 
@@ -228,7 +228,7 @@ a {
 
 .contact-icon {
   font-size: 3.4rem;
-  color: #006666;
+  color: #015069;
 }
 
 footer {
@@ -241,7 +241,7 @@ footer {
 }
 
 footer p {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 0.825rem;
   margin: 0 0.6rem;
 }
@@ -284,7 +284,7 @@ footer p {
 }
 
 .modal-header {
-  background-color: #006666;
+  background-color: #015069;
   padding: 1rem;
 }
 
@@ -370,6 +370,7 @@ footer p {
 
   h2 {
     font-size: 2rem;
+    letter-spacing: 0.125em;
     text-align: center;
   }
 
