@@ -187,6 +187,10 @@ a {
   margin-right: 1rem;
 }
 
+.personal-photo {
+  display: none;
+}
+
 .about-me {
   margin-top: 3rem;
   padding: 0.7rem;
@@ -362,7 +366,7 @@ footer p {
   }
 }
 
-/* TABLET SCREENS AND ABOVE */
+/* TABLET SCREENS */
 
 @media only screen and (min-width: 768px) {
   h1 {
@@ -393,7 +397,7 @@ footer p {
     font-size: 1.55rem;
   }
 
-  .center {
+  .align {
     text-align: center;
   }
 
@@ -475,5 +479,39 @@ footer p {
     to {
       top: 0;
     }
+  }
+}
+
+/* DESKTOP SCREENS */
+
+@media only screen and (min-width: 1025px) {
+  h2 {
+    text-align: left;
+  }
+
+  .align {
+    text-align: left;
+  }
+
+  .grid-lg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    align-items: center;
+  }
+
+  .personal-photo {
+    display: block;
+    margin: auto;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 3px solid #015069;
+  }
+
+  .about-me {
+    width: 470px;
+    margin: 3rem 0;
+    text-align: left;
   }
 }
