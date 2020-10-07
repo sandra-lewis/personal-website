@@ -75,7 +75,7 @@ export const projectList = [
     title: '‘SEMESTA 2019’ WEBSITE',
     description:
       'A website for the National Level Inter-Collegiate Fest organized by St. Agnes College (Autonomous), Mangaluru.',
-    technologies: 'HTML5, CSS3, JavaScript',
+    technologies: 'HTML, CSS, JavaScript',
     gitUrl: 'https://github.com/sandra-lewis/semesta2k19',
   },
 ];

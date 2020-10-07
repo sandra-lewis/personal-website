@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="./srl.png" />
+    <link rel="icon" type="image/png" href="./images/srl.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -13,7 +13,7 @@
       name="description"
       content="An aspiring Software Developer, currently pursuing MCA at Manipal Institute of Technology."
     />
-    <link rel="apple-touch-icon" href="./srl.png" />
+    <link rel="apple-touch-icon" href="./images/srl.png" />
     <script
       src="https://kit.fontawesome.com/1e6e03ca7c.js"
       crossorigin="anonymous"
@@ -22,6 +22,23 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <img
+      src="./images/loader.gif"
+      alt="Loading..."
+      id="loader"
+      style="width: 100px; display: block; margin: 14rem auto 0"
+    />
     <div id="root"></div>
+    <script>
+      document.onreadystatechange = () => {
+        if (document.readyState !== 'complete') {
+          document.querySelector('body').style.visibility = 'hidden';
+          document.getElementById('loader').style.visibility = 'visible';
+        } else {
+          document.getElementById('loader').style.display = 'none';
+          document.querySelector('body').style.visibility = 'visible';
+        }
+      };
+    </script>
   </body>
 </html>

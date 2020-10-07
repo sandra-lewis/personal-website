@@ -2,13 +2,13 @@
 export const particlesOptions = {
   particles: {
     number: {
-      value: 15,
+      value: 18,
     },
     color: {
       value: ['#015069', '#606060'],
     },
     size: {
-      value: 12,
+      value: 8,
     },
     line_linked: {
       color: '#909090',

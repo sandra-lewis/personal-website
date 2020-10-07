@@ -25,30 +25,37 @@ const App = () => {
 
   return (
     <Fragment>
-      <Particles className="particles" params={particlesOptions} />
-      <nav className="nav-bar" id="nav-links">
-        <AnchorLink offset="initial" href="#aboutme">
-          ABOUT
-        </AnchorLink>
+      <div
+        data-aos="fade"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+      >
+        <Particles className="particles" params={particlesOptions} />
+        <nav className="nav-bar" id="nav-links">
+          <AnchorLink offset="initial" href="#aboutme">
+            ABOUT
+          </AnchorLink>
 
-        <AnchorLink offset="30" href="#projects">
-          PROJECTS
-        </AnchorLink>
+          <AnchorLink offset="30" href="#projects">
+            PROJECTS
+          </AnchorLink>
 
-        <AnchorLink offset="90" href="#skills">
-          SKILLS
-        </AnchorLink>
+          <AnchorLink offset="90" href="#skills">
+            SKILLS
+          </AnchorLink>
 
-        <AnchorLink href="#contact">CONTACT</AnchorLink>
+          <AnchorLink href="#contact">CONTACT</AnchorLink>
 
-        <div className="bar-icon" onClick={onClick}>
-          <i className="fas fa-bars" />
-        </div>
-      </nav>
+          <div className="bar-icon" onClick={onClick}>
+            <i className="fas fa-bars" />
+          </div>
+        </nav>
 
-      <section id="aboutme" className="overlay">
-        <About />
-      </section>
+        <section id="aboutme" className="overlay">
+          <About />
+        </section>
+      </div>
       <section id="projects" className="white-bg">
         <Projects />
       </section>
